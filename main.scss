@@ -1,60 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: gray;
+    font-family: 'Titillium', Arial, Helvetica, sans-serif;
 }
 
-nav {
-    height: 50px;
-    width: 100%;
-    background-color: aqua;
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav a {
-    margin: 0 10px;
+#grid {
+    padding: 0 10vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh 200px 100vh 100px 100px 100vh 50px;
+    grid-template-areas:
+        "one one one one"
+        "two two three three"
+        "four four four four"
+        "five five six six"
+        "seven seven eight eight"
+        "nine nine nine nine"
+        "ten ten ten ten";
 }
 
 header {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
 }
 
-#aboutme {
-    height: 100vh;
-    width: 100%;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-}
-
-#workhistory {
-    height: 100vh;
-    width: 100%;
+#about {
+    grid-area: one;
+    text-align: left;
     background-color: blue;
-    display: flex;
-    justify-content: center;
+}
+
+#about p {
+    margin: 20px;
+}
+
+#about ul {
+    margin-left: 40px;
+}
+
+#work {
+    grid-area: four;
+    text-align: left;
+    background-color: red;
+}
+
+#work p {
+    margin: 20px;
 }
 
 #projects {
-    height: 100vh;
-    width: 100%;
-    background-color: red;
-    display: flex;
-    justify-content: center;
+    grid-area: nine;
+    text-align: left;
+    background-color: green;
 }
 
-footer {
-    height: 80px;
-    width: 100%;
+#projects p {
+    margin: 20px;
+}
+
+#contact {
+    grid-area: ten;
     background-color: purple;
-    display: flex;
-    justify-content: center;
 }
