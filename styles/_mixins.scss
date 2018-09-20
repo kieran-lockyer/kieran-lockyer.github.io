@@ -1,0 +1,123 @@
+@mixin phone {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 501px) and (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 961px) {
+        @content;
+    }
+}
+
+@mixin content($area, $bgcolor, $color) {
+    grid-area: $area;
+    background-color: $bgcolor;
+    padding: 20px;
+    color: $color;
+
+    li {
+        margin-left: 20px;
+    }
+
+    a {
+        &:link {
+            color: #E4FF00;
+        }
+
+        &:visited {
+            color: #E4FF00;
+        }
+    }
+}
+
+@mixin imglink($area, $url) {
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    grid-area: $area;
+    background-image: url($url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin links {
+    #about {
+        @include content(one, $pink, $yellow);
+    }
+
+    #work {
+        @include content(two, $yellow, $light-green);
+    }
+
+    #projects {
+        @include content(three, $light-green, $pink);
+    }
+
+    #github {
+        @include imglink(four, '../images/github.png');
+    }
+
+    #linkedin {
+        @include imglink(five, '../images/linkedin.png');
+    }
+
+    #html {
+        @include imglink(six, '../images/html.png');
+    }
+
+    #css {
+        @include imglink(seven, '../images/css.png');
+    }
+
+    #ruby {
+        @include imglink(eight, '../images/ruby.png');
+    }
+
+    #python {
+        @include imglink(nine, '../images/python.png');
+    }
+}
+
+@mixin header($width, $height, $strong-size, $h1-size) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $dark-green;
+        text-shadow: 4px 4px 4px black;
+    
+        img {
+            width: $width;
+            height: $height;
+            animation: spin 4s;
+            transition: all 2s;
+            margin: 40px;
+            border-radius: 2px 2px 4px black;
+            box-shadow: 50%;
+    
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    
+        h1 strong {
+            font-size: $strong-size;
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: $h1-size;
+        }
+    }
+}
