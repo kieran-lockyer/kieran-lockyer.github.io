@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glide {
+    to {
+        transform: translate(100px);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +19,35 @@
 }
 
 body {
-    background-color: gray;
     font-family: 'Titillium', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+#background {
+    width: 200vw;
+    height: 100%;
+    background-image: url('images/Happy\ Wallpaper\ Many.jpg');
+    background-size: cover;
+    animation: glide 5s infinite linear;
+}
+
+body img {
+    width: 200px;
+    margin: 50px 0;
+    transition: all 2s;
+    animation: spin 5s;
+
+    &:hover {
+        transform: rotate(720deg);
+    }
 }
 
 #grid {
     padding: 0 10vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100vh 200px 100vh 100px 100px 100vh 50px;
+    grid-auto-rows: minmax(100vh, auto);
+    grid-gap: 1em;
     grid-template-areas:
         "one one one one"
         "two two three three"
@@ -25,15 +58,21 @@ body {
         "ten ten ten ten";
 }
 
+#grid header, section, footer {
+    padding: 1em;
+}
+
 header {
     padding: 50px 0;
     text-align: center;
+    color: #005654;
 }
 
 #about {
     grid-area: one;
     text-align: left;
-    background-color: blue;
+    background-color: #FF6F6D;
+    color: #007979;
 }
 
 #about p {
@@ -47,7 +86,8 @@ header {
 #work {
     grid-area: four;
     text-align: left;
-    background-color: red;
+    background-color: #007979;
+    color: #FF6F6D;
 }
 
 #work p {
@@ -57,7 +97,8 @@ header {
 #projects {
     grid-area: nine;
     text-align: left;
-    background-color: green;
+    background-color: #EFFF21;
+    color: #007979;
 }
 
 #projects p {
@@ -66,5 +107,5 @@ header {
 
 #contact {
     grid-area: ten;
-    background-color: purple;
+    background-color: #005654;
 }
