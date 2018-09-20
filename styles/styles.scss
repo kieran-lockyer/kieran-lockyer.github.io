@@ -27,7 +27,7 @@ body {
     text-align: center;
     font-family: 'Righteous', 'Titillium', Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background-image: url('images/background-repeat.jpg');
+    background-image: url('../images/background-repeat.jpg');
     background-size: 50%;
     background-position: 0 0;
     animation: slide 20s linear infinite;
@@ -97,6 +97,16 @@ header {
     background-color: #009E54;
     padding: 20px;
     color: #EA005F;
+
+    a {
+        &:active {
+            color: #E4FF00;
+        }
+
+        &:visited {
+            color: #E4FF00;
+        }
+    }
 }
 
 #github {
@@ -107,7 +117,7 @@ header {
     }
 
     grid-area: four;
-    background-image: url('images/github.png');
+    background-image: url('../images/github.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,7 +131,7 @@ header {
     }
 
     grid-area: five;
-    background-image: url('images/linkedin.png');
+    background-image: url('../images/linkedin.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -135,7 +145,7 @@ header {
     }
 
     grid-area: six;
-    background-image: url('images/html.png');
+    background-image: url('../images/html.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -149,7 +159,7 @@ header {
     }
 
     grid-area: seven;
-    background-image: url('images/css.png');
+    background-image: url('../images/css.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,7 +173,7 @@ header {
     }
 
     grid-area: eight;
-    background-image: url('images/ruby.png');
+    background-image: url('../images/ruby.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +187,7 @@ header {
     }
 
     grid-area: nine;
-    background-image: url('images/python.png');
+    background-image: url('../images/python.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

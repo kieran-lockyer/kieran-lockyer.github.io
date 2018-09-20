@@ -43,7 +43,7 @@ body {
   text-align: center;
   font-family: 'Righteous', 'Titillium', Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  background-image: url("images/background-repeat.jpg");
+  background-image: url("../images/background-repeat.jpg");
   background-size: 50%;
   background-position: 0 0;
   -webkit-animation: slide 20s linear infinite;
@@ -137,11 +137,19 @@ header h1 strong {
   color: #EA005F;
 }
 
+#projects a:active {
+  color: #E4FF00;
+}
+
+#projects a:visited {
+  color: #E4FF00;
+}
+
 #github {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: four;
-  background-image: url("images/github.png");
+  background-image: url("../images/github.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +165,7 @@ header h1 strong {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: five;
-  background-image: url("images/linkedin.png");
+  background-image: url("../images/linkedin.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,7 +181,7 @@ header h1 strong {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: six;
-  background-image: url("images/html.png");
+  background-image: url("../images/html.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,7 +197,7 @@ header h1 strong {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: seven;
-  background-image: url("images/css.png");
+  background-image: url("../images/css.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -205,7 +213,7 @@ header h1 strong {
   -ms-grid-row: 2;
   -ms-grid-column: 5;
   grid-area: eight;
-  background-image: url("images/ruby.png");
+  background-image: url("../images/ruby.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -221,7 +229,7 @@ header h1 strong {
   -ms-grid-row: 2;
   -ms-grid-column: 6;
   grid-area: nine;
-  background-image: url("images/python.png");
+  background-image: url("../images/python.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -250,4 +258,4 @@ header h1 strong {
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=skellystyle.css.map */
+/*# sourceMappingURL=styles.css.map */
