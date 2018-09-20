@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
+@import 'variables';
+@import 'mixins';
+@import 'animations';
 
 * {
     margin: 0;
@@ -7,25 +10,9 @@
     box-sizing: border-box;
 }
 
-@keyframes slide {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: 100% 0%;
-    }
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(180deg)
-    }
-}
-
 body {
     text-align: center;
-    font-family: 'Righteous', 'Titillium', Arial, Helvetica, sans-serif;
+    font-family: $font-stack;
     font-size: 1rem;
     background-image: url('../images/background-repeat.jpg');
     background-size: 50%;
@@ -34,8 +21,13 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dark-green;
+
     img {
-        margin: 40px;
+        margin: 30px;
         width: 400px;
         height: 400px;
         animation: spin 4s;
@@ -46,158 +38,200 @@ header {
         }
     }
 
-    h1 {
-        font-size: 3rem;
-    }
-
     h1 strong {
         font-size: 4rem;
     }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #005445;
-}
-
-#grid {
-    margin: 100px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto 150px 50px;
-    grid-template-areas:
-        "one one two two three three"
-        "four five six seven eight nine"
-        "ten ten ten ten ten ten";
-    text-align: left;
-    grid-gap: 1em;
-}
-
-#about {
-    grid-area: one;
-    background-color: #EA005F;
-    padding: 20px;
-    color: #E4FF00;
-
-    li {
-        margin-left: 20px;
+    h1 {
+        font-size: 3rem;
     }
 }
 
-#work {
-    grid-area: two;
-    background-color: #E4FF00;
-    padding: 20px;
-    color: #009E54;
-}
+@include desktop {
 
-#projects {
-    grid-area: three;
-    background-color: #009E54;
-    padding: 20px;
-    color: #EA005F;
+    #grid {
+        margin: 100px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto 150px 50px;
+        grid-template-areas:
+            "one one two two three three"
+            "four five six seven eight nine"
+            "ten ten ten ten ten ten";
+        text-align: left;
+        grid-gap: 1em;
+    }
 
-    a {
-        &:active {
-            color: #E4FF00;
-        }
+    #about {
+        @include content(one, $pink, $yellow);
+    }
 
-        &:visited {
-            color: #E4FF00;
-        }
+    #work {
+        @include content(two, $yellow, $light-green);
+    }
+
+    #projects {
+        @include content(three, $light-green, $pink);
+    }
+
+    #github {
+        @include imglink(four, '../images/github.png');
+    }
+
+    #linkedin {
+        @include imglink(five, '../images/linkedin.png');
+    }
+
+    #html {
+        @include imglink(six, '../images/html.png');
+    }
+
+    #css {
+        @include imglink(seven, '../images/css.png');
+    }
+
+    #ruby {
+        @include imglink(eight, '../images/ruby.png');
+    }
+
+    #python {
+        @include imglink(nine, '../images/python.png');
+    }
+
+    #contact {
+        grid-area: ten;
+        background-color: $dark-green;
+        color: $yellow;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
 
-#github {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
+@include tablet {
+
+    #grid {
+        margin: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 150px auto 150px 50px;
+        grid-template-areas:
+            "one one one"
+            "four five six"
+            "two three"
+            "seven eight nine"
+            "ten ten ten";
+        text-align: left;
+        grid-gap: 1em;
     }
 
-    grid-area: four;
-    background-image: url('../images/github.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#linkedin {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
+    #about {
+        @include content(one, $pink, $yellow);
     }
 
-    grid-area: five;
-    background-image: url('../images/linkedin.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#html {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
+    #work {
+        @include content(two, $yellow, $light-green);
     }
 
-    grid-area: six;
-    background-image: url('../images/html.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#css {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
+    #projects {
+        @include content(three, $light-green, $pink);
     }
 
-    grid-area: seven;
-    background-image: url('../images/css.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#ruby {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
+    #github {
+        @include imglink(four, '../images/github.png');
     }
 
-    grid-area: eight;
-    background-image: url('../images/ruby.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#python {
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
+    #linkedin {
+        @include imglink(five, '../images/linkedin.png');
     }
 
-    grid-area: nine;
-    background-image: url('../images/python.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    #html {
+        @include imglink(six, '../images/html.png');
+    }
+
+    #css {
+        @include imglink(seven, '../images/css.png');
+    }
+
+    #ruby {
+        @include imglink(eight, '../images/ruby.png');
+    }
+
+    #python {
+        @include imglink(nine, '../images/python.png');
+    }
+
+    #contact {
+        grid-area: ten;
+        background-color: $dark-green;
+        color: $yellow;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
-#contact {
-    grid-area: ten;
-    background-color: rgb(0, 88, 77);
-    color: #E4FF00;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+@include phone {
+
+    #grid {
+        margin: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 150px auto 150px auto 150px 50px;
+        grid-template-areas:
+            "one one"
+            "four five"
+            "two two"
+            "six seven"
+            "three three"
+            "eight nine"
+            "ten ten";
+        text-align: left;
+        grid-gap: 1em;
+    }
+
+    #about {
+        @include content(one, $pink, $yellow);
+    }
+
+    #work {
+        @include content(two, $yellow, $light-green);
+    }
+
+    #projects {
+        @include content(three, $light-green, $pink);
+    }
+
+    #github {
+        @include imglink(four, '../images/github.png');
+    }
+
+    #linkedin {
+        @include imglink(five, '../images/linkedin.png');
+    }
+
+    #html {
+        @include imglink(six, '../images/html.png');
+    }
+
+    #css {
+        @include imglink(seven, '../images/css.png');
+    }
+
+    #ruby {
+        @include imglink(eight, '../images/ruby.png');
+    }
+
+    #python {
+        @include imglink(nine, '../images/python.png');
+    }
+
+    #contact {
+        grid-area: ten;
+        background-color: $dark-green;
+        color: $yellow;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
