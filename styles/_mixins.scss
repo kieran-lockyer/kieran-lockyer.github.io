@@ -16,6 +16,18 @@
     }
 }
 
+@mixin nav($font-size, $height) {
+    #nav {
+        height: $height;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: $font-size;
+        background-color: $dark-green;
+    }
+
+    @include linkcolor
+}
+
 @mixin content($area, $bgcolor, $color) {
     grid-area: $area;
     background-color: $bgcolor;
@@ -26,15 +38,7 @@
         margin-left: 20px;
     }
 
-    a {
-        &:link {
-            color: #E4FF00;
-        }
-
-        &:visited {
-            color: #E4FF00;
-        }
-    }
+    @include linkcolor
 }
 
 @mixin imglink($area, $url) {
@@ -96,7 +100,7 @@
         align-items: center;
         color: $dark-green;
         text-shadow: 4px 4px 4px black;
-    
+
         img {
             width: $width;
             height: $height;
@@ -105,19 +109,33 @@
             margin: 40px;
             border-radius: 2px 2px 4px black;
             box-shadow: 50%;
-    
+
             &:hover {
                 transform: rotate(360deg);
             }
         }
-    
+
         h1 strong {
             font-size: $strong-size;
         }
-    
+
         h1 {
             text-align: center;
             font-size: $h1-size;
+        }
+    }
+}
+
+@mixin linkcolor {
+    a {
+        padding: 5px;
+
+        &:link {
+            color: $yellow;
+        }
+
+        &:visited {
+            color: $yellow;
         }
     }
 }
