@@ -1,3 +1,4 @@
+// animation for the moving background
 @keyframes slide {
     from {
         background-position: 0 0;
@@ -8,6 +9,7 @@
     }
 }
 
+// animation for the logo
 @keyframes spin {
     to {
         transform: rotate(360deg)

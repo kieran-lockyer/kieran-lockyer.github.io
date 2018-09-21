@@ -1,21 +1,25 @@
+// changes layout for mobile view
 @mixin phone {
     @media screen and (max-width: 500px) {
         @content;
     }
 }
 
+// changes layout for tablet view
 @mixin tablet {
     @media screen and (min-width: 501px) and (max-width: 960px) {
         @content;
     }
 }
 
+// changes layout for desktop view
 @mixin desktop {
     @media screen and (min-width: 961px) {
         @content;
     }
 }
 
+// sets the nav bar style
 @mixin nav($font-size, $height) {
     #nav {
         height: $height;
@@ -24,23 +28,55 @@
         font-size: $font-size;
         background-color: $dark-green;
     }
-
-    @include linkcolor
 }
 
+// sets header style
+@mixin header($width, $height, $strong-size, $h1-size) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $dark-green;
+        text-shadow: 4px 4px 4px black;
+
+        img {
+            width: $width;
+            height: $height;
+            animation: spin 4s;
+            transition: all 2s;
+            margin: 40px;
+            filter: drop-shadow(2px 2px 4px black);
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 strong {
+            font-size: $strong-size;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: $h1-size;
+        }
+    }
+}
+
+// sets style for about me, work & study and projects
 @mixin content($area, $bgcolor, $color) {
     grid-area: $area;
     background-color: $bgcolor;
     padding: 20px;
     color: $color;
+    box-shadow: 2px 2px 4px black;
 
     li {
         margin-left: 20px;
     }
-
-    @include linkcolor
 }
 
+// sets style for anchor images - github, linkedin, html, css, ruby and python links
 @mixin imglink($area, $url) {
     a {
         display: block;
@@ -53,8 +89,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    filter: drop-shadow(2px 2px 4px black);
 }
 
+// all the grid elements in one mixin so they don't need to be repeated in each view layout.
 @mixin links {
     #about {
         @include content(one, $pink, $yellow);
@@ -93,49 +131,17 @@
     }
 }
 
-@mixin header($width, $height, $strong-size, $h1-size) {
-    header {
+// sets the style for the footer element where contact info is found.
+@mixin contact($margin-top) {
+    #contact {
+        background-color: $dark-green;
+        margin-top: $margin-top;
+        width: 100%;
+        height: 50px;
+        color: $yellow;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        color: $dark-green;
-        text-shadow: 4px 4px 4px black;
-
-        img {
-            width: $width;
-            height: $height;
-            animation: spin 4s;
-            transition: all 2s;
-            margin: 40px;
-            border-radius: 2px 2px 4px black;
-            box-shadow: 50%;
-
-            &:hover {
-                transform: rotate(360deg);
-            }
-        }
-
-        h1 strong {
-            font-size: $strong-size;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: $h1-size;
-        }
-    }
-}
-
-@mixin linkcolor {
-    a {
-        padding: 5px;
-
-        &:link {
-            color: $yellow;
-        }
-
-        &:visited {
-            color: $yellow;
-        }
     }
 }

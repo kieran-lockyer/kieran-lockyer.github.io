@@ -4,12 +4,15 @@
 @import 'mixins';
 @import 'animations';
 
+// sets the margin and padding for all elements in the page to 0.
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// Sets the font family to Righteous or other san-serif fonts, front size to 1rem for all elements in the page.
+// Sets the background to a repeating image that will slide across the screen horizontally.
 body {
     font-family: $font-stack;
     font-size: 1rem;
@@ -17,20 +20,39 @@ body {
     background-size: 50%;
     background-position: 0 0;
     animation: slide 60s linear infinite;
+
+    a {
+        padding: 5px;
+        text-decoration: none;
+
+        &:link {
+            color: $yellow;
+        }
+
+        &:visited {
+            color: $yellow;
+        }
+    }
 }
 
+// Background colour was too bright so applied a 50% opacity white "sheet" over the body to mute the color"
 #mute {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-@include links @include desktop {
 
+// Sets the grid layout and element sizing and positioning for desktop resolution
+@include desktop {
+
+    // Hides the nav bar by setting it's height and text size to 0.
     @include nav(0rem, 0);
 
+    // Imports the header style from a mixin and sets the logo width and height and header text size.
     @include header(400px, 400px, 4rem, 3rem);
 
+    // sets the grid layout
     #grid {
         margin: 0 200px;
         display: grid;
@@ -41,15 +63,24 @@ body {
             "four five six seven eight nine";
         text-align: left;
         grid-gap: 1em;
+        // imports the grids content styles from a mixin.
+        @include links;
     }
+
+    // imports the footer styles from a mixin and passes in the top margin of the footer.
+    @include contact(20px)
 }
 
+// Sets the grid layout and element sizing and positioning for tablet resolution
 @include tablet {
 
+    // sets the nav bar text size and height.
     @include nav(1rem, auto);
 
+    // Imports the header style from a mixin and sets the logo width and height and header text size.
     @include header(300px, 300px, 3rem, 2rem);
 
+    // sets the grid layout
     #grid {
         margin: 0 100px;
         display: grid;
@@ -60,17 +91,26 @@ body {
             "two two two three three three"
             "four four five five six six"
             "seven seven eight eight nine nine";
-        grid-gap: 5px;
+        grid-gap: 1em;
         text-align: left;
+        // imports the grids content styles from a mixin.
+        @include links;
     }
+
+    // imports the footer styles from a mixin and passes in the top margin of the footer.
+    @include contact(0px)
 }
 
+// Sets the grid layout and element sizing and positioning for phone resolution
 @include phone {
 
+    // sets the nav bar text size and height.
     @include nav(0.9rem, auto);
 
+    // Imports the header style from a mixin and sets the logo width and height and header text size.
     @include header(200px, 200px, 2rem, 1.5rem);
 
+    // sets the grid layout
     #grid {
         margin: 0 20px;
         display: grid;
@@ -85,17 +125,10 @@ body {
             "eight nine";
         text-align: left;
         grid-gap: 1em;
+        // imports the grids content styles from a mixin.
+        @include links;
     }
-}
 
-#contact {
-    background-color: $dark-green;
-    margin-top: 20px;
-    width: 100%;
-    height: 50px;
-    color: $yellow;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    // imports the footer styles from a mixin and passes in the top margin of the footer.
+    @include contact(0px)
 }
