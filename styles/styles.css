@@ -105,8 +105,8 @@ body a:visited {
             filter: drop-shadow(2px 2px 4px black);
   }
   header img:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   header h1 strong {
     font-size: 4rem;
@@ -137,6 +137,12 @@ body a:visited {
     color: #efff22;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #about:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #about li {
     margin-left: 20px;
@@ -151,6 +157,12 @@ body a:visited {
     color: #007a78;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #work:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #work li {
     margin-left: 20px;
@@ -165,6 +177,12 @@ body a:visited {
     color: #ff6f6e;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #projects:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #projects li {
     margin-left: 20px;
@@ -179,11 +197,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #github a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #github:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #linkedin {
     -ms-grid-row: 2;
@@ -195,11 +219,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #linkedin a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #linkedin:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #html {
     -ms-grid-row: 2;
@@ -211,11 +241,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #html a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #html:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #css {
     -ms-grid-row: 2;
@@ -227,11 +263,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #css a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #css:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #ruby {
     -ms-grid-row: 2;
@@ -243,11 +285,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #ruby a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #ruby:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #python {
     -ms-grid-row: 2;
@@ -259,11 +307,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #python a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #python:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #contact {
     background-color: #005654;
@@ -324,8 +378,8 @@ body a:visited {
             filter: drop-shadow(2px 2px 4px black);
   }
   header img:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   header h1 strong {
     font-size: 3rem;
@@ -356,6 +410,12 @@ body a:visited {
     color: #efff22;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #about:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #about li {
     margin-left: 20px;
@@ -370,6 +430,12 @@ body a:visited {
     color: #007a78;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #work:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #work li {
     margin-left: 20px;
@@ -384,6 +450,12 @@ body a:visited {
     color: #ff6f6e;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #projects:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #projects li {
     margin-left: 20px;
@@ -399,11 +471,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #github a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #github:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #linkedin {
     -ms-grid-row: 3;
@@ -416,11 +494,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #linkedin a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #linkedin:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #html {
     -ms-grid-row: 3;
@@ -433,11 +517,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #html a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #html:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #css {
     -ms-grid-row: 4;
@@ -450,11 +540,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #css a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #css:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #ruby {
     -ms-grid-row: 4;
@@ -467,11 +563,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #ruby a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #ruby:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #python {
     -ms-grid-row: 4;
@@ -484,11 +586,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #python a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #python:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #contact {
     background-color: #005654;
@@ -549,8 +657,8 @@ body a:visited {
             filter: drop-shadow(2px 2px 4px black);
   }
   header img:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   header h1 strong {
     font-size: 2rem;
@@ -581,6 +689,12 @@ body a:visited {
     color: #efff22;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #about:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #about li {
     margin-left: 20px;
@@ -595,6 +709,12 @@ body a:visited {
     color: #007a78;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #work:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #work li {
     margin-left: 20px;
@@ -609,6 +729,12 @@ body a:visited {
     color: #ff6f6e;
     -webkit-box-shadow: 2px 2px 4px black;
             box-shadow: 2px 2px 4px black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #grid #projects:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #grid #projects li {
     margin-left: 20px;
@@ -623,11 +749,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #github a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #github:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #linkedin {
     -ms-grid-row: 2;
@@ -639,11 +771,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #linkedin a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #linkedin:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #html {
     -ms-grid-row: 4;
@@ -655,11 +793,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #html a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #html:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #css {
     -ms-grid-row: 4;
@@ -671,11 +815,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #css a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #css:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #ruby {
     -ms-grid-row: 6;
@@ -687,11 +837,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #ruby a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #ruby:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #grid #python {
     -ms-grid-row: 6;
@@ -703,11 +859,17 @@ body a:visited {
     background-position: center;
     -webkit-filter: drop-shadow(2px 2px 4px black);
             filter: drop-shadow(2px 2px 4px black);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   #grid #python a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  #grid #python:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   #contact {
     background-color: #005654;

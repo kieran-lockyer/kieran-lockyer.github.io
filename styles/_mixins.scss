@@ -48,7 +48,7 @@
             filter: drop-shadow(2px 2px 4px black);
 
             &:hover {
-                transform: rotate(360deg);
+                transform: rotate(180deg);
             }
         }
 
@@ -70,6 +70,11 @@
     padding: 20px;
     color: $color;
     box-shadow: 2px 2px 4px black;
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     li {
         margin-left: 20px;
@@ -90,6 +95,11 @@
     background-repeat: no-repeat;
     background-position: center;
     filter: drop-shadow(2px 2px 4px black);
+    transition: all 1s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 // all the grid elements in one mixin so they don't need to be repeated in each view layout.
