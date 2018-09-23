@@ -27,13 +27,13 @@ I have 3 main animation elements incorporated into my portfolio:
 
 #### Desktop
 
-![Desktop Screenshot](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Screenshot.jpg)
+![Desktop Screenshot](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Screenshot.png)
 
 #### Tablet
 
-![Tablet Top](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Top.jpg)
+![Tablet Top](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Top.png)
 
-![Tablet Bottom](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Bottom.jpg)
+![Tablet Bottom](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Bottom.png)
 
 #### Phone
 
