@@ -68,9 +68,15 @@ I started with pen and paper while designing my websites layout, then moved to A
 
 ![Wireframe 3](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe-Pen3.jpg)
 
+#### Desktop
+
 ![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Wireframe.jpg)
 
+#### Tablet
+
 ![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Wireframe.jpg)
+
+#### Phone
 
 ![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Wireframe.jpg)
 
@@ -155,10 +161,12 @@ ISP - A company that sells access to the Internet, provides IP addresses for use
 
 Web browser - Software that retrieves and displays content on a users screen.
 
-### Aspect of the Internet
+### Search Engines
 
 One of the most important and impactful elements of the Internet is the search engine. In the beginning users where limited to websites that they already knew how to find, or could guess how to access. 
 
+
 The earliest search engines were merely lists of websites sorted by category. More modern search engines utilise “spiders”, bots that trawl the internet and collect data to a search index, with various algorithms used to rank which websites will be listed at the top when you run a search. 
+
 
 This has been a game changer and has unlocked the full potential of the internet. However, search engine companies have been questioned about how much data they need to deliver good search results, and if there should be restrictions placed for privacy as companies have begun serving targeted ads, content based on personal info like political alignment and eavesdrop on conversations with modern smartphones.
