@@ -1,6 +1,7 @@
 #Portfolio Site
-Link to site - https://kieran-lockyer.github.io/
-Link to github repo - https://github.com/kieran-lockyer/kieran-lockyer.github.io
+
+Link to site - (https://kieran-lockyer.github.io/)
+Link to github repo - (https://github.com/kieran-lockyer/kieran-lockyer.github.io)
 
 ## Part One
 
@@ -26,21 +27,21 @@ I have 3 main animation elements incorporated into my portfolio:
 
 #### Desktop
 
-![Desktop Screenshot](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop Screenshot.jpg)
+![Desktop Screenshot](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Screenshot.jpg)
 
 #### Tablet
 
-![Tablet Top](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet Top.jpg)
+![Tablet Top](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Top.jpg)
 
-![Tablet Bottom](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet Bottom.jpg)
+![Tablet Bottom](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Bottom.jpg)
 
 #### Phone
 
-![Phone Top](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone Top.jpg)
+![Phone Top](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Top.jpg)
 
-![Phone Mid](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone Mid.jpg)
+![Phone Mid](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Mid.jpg)
 
-![Phone Bottom](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone Bottom.jpg)
+![Phone Bottom](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Bottom.jpg)
 
 ### Target Audience
 Professional coders, hiring managers at software companies and tech industry recruiters.
@@ -56,27 +57,27 @@ I wanted to create a clean and colourful portfolio site that shows some creativi
 ### Mood Board
 On my mood board I included some screenshots of the game "Monument Valley" and the YouTube channel Kurzgesagt as I really like their design and colour choices. I also included a picture of my favourite socks which feature an optical illusion print.
 
-![Mood Board](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Portfolio Mood Board.jpg)
+![Mood Board](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Portfolio-Mood-Board.jpg)
 
 ### Wireframes
 I started with pen and paper while designing my websites layout, then moved to Adobe Illustrator to create finalised wireframes.
 
-![Wireframe 1](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe Pen 1.jpg)
+![Wireframe 1](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe-Pen.jpg)
 
-![Wireframe 2](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe Pen 1.jpg)
+![Wireframe 2](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe-Pen2.jpg)
 
-![Wireframe 3](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe Pen 1.jpg)
+![Wireframe 3](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe-Pen3.jpg)
 
-![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop Wirefram.pdf)
+![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Wirefram.pdf)
 
-![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet Wirefram.pdf)
+![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Wirefram.pdf)
 
-![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone Wirefram.pdf)
+![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Wirefram.pdf)
 
 ### Colour Pallettes
 I wanted muted colours on my site with accents to direct users towards key information.
 
-![Colour Pallette](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Colour Pallette.png)
+![Colour Pallette](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Colour-Pallette.png)
 
 ### Font Selections
 As most of the elements on my site comprised of straight edges, I wanted to pick a san-serif font that had some curviness to contrast with the rest of my site. I chose 'Righteous' as a font as I instantly liked it when I first saw it and it met the criteria I was after. Instead of using multiple fonts, I used the one with different sizes and emphasis to differentiate headings from the main body of text.
