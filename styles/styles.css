@@ -44,8 +44,8 @@ body {
   background-image: url("../images/background-repeat.jpg");
   background-size: 50%;
   background-position: 0 0;
-  -webkit-animation: slide 60s linear infinite forwards;
-          animation: slide 60s linear infinite forwards;
+  -webkit-animation: slide 60s linear infinite;
+          animation: slide 60s linear infinite;
 }
 
 body a {
