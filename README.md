@@ -1,5 +1,4 @@
-#Portfolio Site
-
+# Portfolio Site
 Link to site - (https://kieran-lockyer.github.io/)
 Link to github repo - (https://github.com/kieran-lockyer/kieran-lockyer.github.io)
 
@@ -68,11 +67,11 @@ I started with pen and paper while designing my websites layout, then moved to A
 
 ![Wireframe 3](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe-Pen3.jpg)
 
-![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Wirefram.jpg)
+![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Wireframe.jpg)
 
-![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Wirefram.jpg)
+![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Wireframe.jpg)
 
-![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Wirefram.jpg)
+![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Wireframe.jpg)
 
 ### Colour Pallettes
 I wanted muted colours on my site with accents to direct users towards key information.
