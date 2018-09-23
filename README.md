@@ -68,11 +68,11 @@ I started with pen and paper while designing my websites layout, then moved to A
 
 ![Wireframe 3](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Wireframe-Pen3.jpg)
 
-![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Wirefram.pdf)
+![Desktop Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Desktop-Wirefram.jpg)
 
-![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Wirefram.pdf)
+![Tablet Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Tablet-Wirefram.jpg)
 
-![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Wirefram.pdf)
+![Phone Wirefram](https://github.com/kieran-lockyer/kieran-lockyer.github.io/blob/master/docs/Phone-Wirefram.jpg)
 
 ### Colour Pallettes
 I wanted muted colours on my site with accents to direct users towards key information.
