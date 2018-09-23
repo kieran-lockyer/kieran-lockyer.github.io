@@ -44,8 +44,8 @@ body {
   background-image: url("../images/background-repeat.jpg");
   background-size: 50%;
   background-position: 0 0;
-  -webkit-animation: slide 60s linear infinite;
-          animation: slide 60s linear infinite;
+  -webkit-animation: slide 60s linear infinite forwards;
+          animation: slide 60s linear infinite forwards;
 }
 
 body a {
@@ -338,6 +338,9 @@ body a:visited {
         -ms-flex-align: center;
             align-items: center;
   }
+  #contact a {
+    color: #ff6f6e;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 960px) {
@@ -617,6 +620,9 @@ body a:visited {
         -ms-flex-align: center;
             align-items: center;
   }
+  #contact a {
+    color: #ff6f6e;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -889,6 +895,9 @@ body a:visited {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #contact a {
+    color: #ff6f6e;
   }
 }
 /*# sourceMappingURL=styles.css.map */
